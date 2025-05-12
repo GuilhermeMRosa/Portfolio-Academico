@@ -1,6 +1,48 @@
 body{
     display: flex;
+    flex-direction: column;
     border: 0px;
     padding: 0px;
     margin: 0px;
+    background-color: #2C2F33;
+    color: #5280a3;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin: auto auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    border: 0.5rem solid #23272A;
+    border-radius: 1rem;
+    background-color: #23272A;
+}
+.ancora{
+    padding: 0.5rem;
+    color: #5280a3;
+    align-items: flex-end;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    border: 0.5rem solid #23272A;
+    border-radius: 0.5rem;
+    background-color: #23272A;
+}
+#container_skills{
+    display: flex;
+    flex-direction: row;
+    
 }
