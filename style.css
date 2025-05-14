@@ -16,7 +16,14 @@ header nav {
   background-color: #23272a;
   justify-content: center;
 }
-main .container {
+.ancora{
+  color: #5280a3;
+}
+.ancora:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.container {
   display: flex;
   margin: 5rem 4rem;
   border: 1rem solid #23272a;
@@ -25,9 +32,12 @@ main .container {
   gap: 1rem;
   background-color: #23272a;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #container_home {
     flex-direction: column;
+    align-items: center;
 }
 .titulo{
     font-size: 2rem;
@@ -37,14 +47,19 @@ p {
 }
 #container_sobre{
     flex-direction: column;
+    align-items: center;
 }
 #container_skills{
     gap: 1rem;
-}
-#skills{
-    display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 #container_projetos{
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#container_contato{
+  flex-direction: column;
+  align-items: center;
 }
