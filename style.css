@@ -16,7 +16,7 @@ header nav {
   background-color: #23272a;
   justify-content: center;
 }
-.ancora{
+.ancora {
   color: #5280a3;
 }
 .ancora:hover {
@@ -36,30 +36,40 @@ header nav {
   text-align: center;
 }
 #container_home {
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-.titulo{
-    font-size: 2rem;
+.titulo {
+  font-size: 2rem;
 }
 p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-#container_sobre{
-    flex-direction: column;
-    align-items: center;
+#container_sobre {
+  flex-direction: column;
+  align-items: center;
 }
-#container_skills{
-    gap: 1rem;
-    align-items: center;
+#container_skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#container_projetos{
+#container_skillslist {
+  display: flex;
+  flex-direction: column;
+}
+#container_skillslist {
+  display: flex;
+  flex-direction: row;
+}
+
+#container_projetos {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-#container_contato{
+#container_contato {
   flex-direction: column;
   align-items: center;
 }
