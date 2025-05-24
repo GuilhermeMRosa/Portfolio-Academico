@@ -1,73 +1,181 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style2.css" />
+    <title>TesteNovo</title>
   </head>
   <body>
     <header>
       <nav>
-        <a class="ancora" href="#container_home">Home</a>
-        <a class="ancora" href="#container_sobre">Sobre</a>
-        <a class="ancora" href="#container_skills">Skills</a>
-        <a class="ancora" href="#container_projetos">Projetos</a>
-        <a class="ancora" href="#container_contato">Contato</a>
+        <a href="#containerHome" class="anchor">Home</a>
+        <a href="#containerSobre" class="anchor">Sobre</a>
+        <a href="#containerSkills" class="anchor">Skills</a>
+        <a href="#containerProjetos" class="anchor">Projetos</a>
+        <a href="#containerContato" class="anchor">Contato</a>
       </nav>
     </header>
     <main>
-      <section class="container" id="container_home">
-        <h1>Seja bem vindo, eu sou Guilherme Rosa</h1>
-        <p>
-          Cursando Analise e desenvolvimento de Sistemas - Fatec SJC
-        </p>
-      </section>
-      <section class="container" id="container_sobre">
-        <h2>Sobre mim</h2>
-        <p>
-          Olá, meu nome é Guilherme Rosa e estou cursando analise e
-          desenvolvimento de sistemas na Fatec. Atualmente tenho 18 anos e estou
-          no primeiro semestre da faculdade, tenho conhecimento do basico de
-          HTML, CSS, Python e Flask. Meu intuito é me aprofundar nas tecnologias
-          durante o curso e me especializar futuramente na area de
-          desenvolvimento de jogos.
-        </p>
-      </section>
-      <section class="container" id="container_skills">
-        <div class="container" id="container_skillstitle">
-        <h2>Skills</h2>
+      <section class="site-top" id="containerHome">
+        <div class="interface">
+          <div class="flex">
+            <div class="site-top-txt">
+              <h1 class="title">Guilherme De Moraes Rosa</h1>
+              <h2 class="subtitle">Seja bem vindo!</h2>
+              <p>Cursando Analise e desenvolvimento de Sistemas - Fatec SJC</p>
+              <p>
+                Olá, meu nome é Guilherme Rosa e estou cursando analise e
+                desenvolvimento de sistemas na Fatec. Atualmente tenho 18 anos e
+                estou no primeiro semestre da faculdade, tenho conhecimento do
+                basico de HTML, CSS, Python e Flask. Meu intuito é me aprofundar
+                nas tecnologias durante o curso e me especializar futuramente na
+                area de desenvolvimento de jogos.
+              </p>
+            </div>
+            <!-- site-top-txt -->
+            <div class="site-top-imgdiv">
+              <img src="/Static/foto_pessoal.jpg" alt="" class="site-top-img" />
+            </div>
+            <!-- site-top-img -->
+          </div>
+          <!-- flex -->
         </div>
-        <div class="container" id="container_skillslist">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>FLASK</span>
-      <span>GITHUB</span>
-        </div>
+        <!-- interface-->
       </section>
-      <section class="container" id="container_projetos">
-        <h2>Projetos</h2>
-        <div>
-          <span>Projeto SIRASS</span>
-          <span><a class="ancora" href="https://github.com/Gabrielle0905/SIRAAS">Github</a></span>
-          <p>
-            O projeto SIRASS é um sistema web de gerenciamento de atestados
-            medicos e de avaliações de equipes Scrum para instituições de ensino
-            e pequenas empresas. Minha abordagem dentro do projeto foi na
-            criação da pagina de gerenciamento de atestados dos alunos e do
-            docentes, trabalhando em principal no backend da pagina , utilizando
-            do HTML e Python com a mini framework do Flask para criação da
-            tabela de atestados e filtro de pesquisa.
-          </p>
-          <img src="./logo_sirass.jpg" alt="" />
+      <section>
+        <div class="interface">
+          <div>
+            <h2 class="title">Curriculo</h2>
+            <a
+              class="anchor"
+              target="_blank"
+              href="/Static/Currículo - Guilherme de Moraes Rosa.pdf"
+            >
+              Link do Curriculo</a
+            >
+          </div>
+          <div>
+            <h2 class="title">Resumo do Curriculo</h2>
+            <h3 class="subtitle">Formação Academica</h3>
+            <p>
+              Tecnólogo em Análise e Desenvolvimento de Sistemas – FATEC São
+              José dos Campos Previsão de conclusão: 2027 (cursando) 1° Semestre
+            </p>
+            <p>
+              Ensino Médio – Colégio COC São José dos Campos Conclusão: 2024
+            </p>
+            <h3 class="subtitle">Conhecimentos e Objetivos</h3>
+            <p>
+              Tenho pratica com metodologias ageis como o Scrum onde atuei como
+              Dev Team, pratica com projetos em HTML, CSS e Python. Procuro uma
+              oportunidade que tenha como foco o desenvolvimento web e aprimorar
+              minhas habilidades em Python e Flask. Futuramente quero me
+              especializar na area de desenvolvimento de jogos.
+            </p>
+          </div>
         </div>
+        <!-- interface -->
+      </section>
+      <section>
+        <div class="interface">
+          <h2 class="title">Certificados</h2>
+          <div>
+            <h3 class="subtitle">Curso Básico de Git – Cursa</h3>
+            <a
+              href="/Static/Certificado Do GIT.pdf"
+              target="_blank"
+              class="anchor"
+              >Link do certificado</a
+            >
+            <img src="/Static/Certificado Do GIT.png" alt="" />
+          </div>
+          <div>
+            <h3 class="subtitle">IT Essentials 7 – Cisco Networking Academy</h3>
+            <a href="" class="anchor">Link do certificado</a>
+            <img src="" alt="" />
+          </div>
+        </div>
+        <!-- interface -->
+      </section>
+      <section>
+        <div class="interface">
+          <h2 class="title">Projetos</h2>
+          <div>
+            <h3 class="subtitle">
+              SIRAAS - SISTEMA DE REGISTRO DE ATESTADOS E AVALIAÇÃO SCRUM
+            </h3>
+            <img src="/Static/logo_sirass.jpg" alt="" />
+            <p>
+              O projeto SIRASS é um sistema web voltado para o gerenciamento de
+              atestados médicos e a avaliação de equipes Scrum, desenvolvido
+              para atender instituições de ensino e pequenas empresas. Minha
+              principal contribuição no projeto foi a criação da página de
+              gerenciamento de atestados, tanto para alunos quanto para
+              docentes. Atuei principalmente no backend, utilizando HTML, Python
+              e o microframework Flask para desenvolver a tabela de atestados e
+              implementar o sistema de filtro de pesquisa.
+            </p>
+            <a
+              href="https://github.com/Gabrielle0905/SIRAAS"
+              target="_blank"
+              class="anchor"
+              >Link do Github</a
+            >
+          </div>
+        </div>
+        <!-- interface -->
+      </section>
+      <section>
+        <div class="interface">
+          <h2 class="title">Habilidades</h2>
+          <div>
+            <div>
+              <h3 class="subtitle">Hard Skills</h3>
+              <p>Python | Flask</p>
+              <p>HTML | CSS</p>
+              <p>Git | GitHub</p>
+              <p>Metodologia Scrum</p>
+              <p>Inglês Intermediário</p>
+            </div>
+            <div>
+              <h3 class="subtitle">Soft Skills</h3>
+              <p>Trabalho em equipe</p>
+              <p>Proatividade</p>
+              <p>Organização</p>
+              <p>Pensamento Analítico</p>
+            </div>
+          </div>
+        </div>
+        <!-- interface -->
       </section>
     </main>
     <footer>
-      <section class="container" id="container_contato">
-        <h2>Contato</h2>
-        <span><a class="ancora" href="https://www.linkedin.com/in/guilherme-rosa-b59527359" target="_blank">Linkedin</a></span>
-        <span><a class="ancora" href="https://github.com/GuilhermeMRosa" target="_blank">Github</a></span>
+      <section>
+        <div class="interface">
+          <h2 class="title">Contatos</h2>
+          <div>
+            <p>guilhermemoraesrosa7@gmail.com</p>
+          </div>
+          <div>
+            <a href="https://github.com/GuilhermeMRosa" target="_blank"
+              >Github</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/guilherme-rosa-b59527359/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </div>
+          <div>
+            <a href="https://www.instagram.com/guilherme.rozza/" target="_blank"
+              >Instagram
+            </a>
+          </div>
+        </div>
+        <!-- interface -->
       </section>
     </footer>
   </body>
