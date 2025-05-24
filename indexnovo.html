@@ -9,121 +9,173 @@
   <body>
     <header>
       <nav>
-        <a href="#container_home">Home</a>
-        <a href="#container_sobre">Sobre</a>
-        <a href="#container_skills">Skills</a>
-        <a href="#container_projetos">Projetos</a>
-        <a href="#container_contato">Contato</a>
+        <a href="#containerHome" class="anchor">Home</a>
+        <a href="#containerSobre" class="anchor">Sobre</a>
+        <a href="#containerSkills" class="anchor">Skills</a>
+        <a href="#containerProjetos" class="anchor">Projetos</a>
+        <a href="#containerContato" class="anchor">Contato</a>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Guilherme De Moraes Rosa</h1>
-        <p>Seja bem vindo!</p>
-        <p>Cursando Analise e desenvolvimento de Sistemas - Fatec SJC</p>
-        <p>
-          Olá, meu nome é Guilherme Rosa e estou cursando analise e
-          desenvolvimento de sistemas na Fatec. Atualmente tenho 18 anos e estou
-          no primeiro semestre da faculdade, tenho conhecimento do basico de
-          HTML, CSS, Python e Flask. Meu intuito é me aprofundar nas tecnologias
-          durante o curso e me especializar futuramente na area de
-          desenvolvimento de jogos.
-        </p>
+      <section class="site-top" id="containerHome">
+        <div class="interface">
+          <div class="flex">
+            <div class="site-top-txt">
+              <h1 class="title">Guilherme De Moraes Rosa</h1>
+              <h2 class="subtitle">Seja bem vindo!</h2>
+              <p>Cursando Analise e desenvolvimento de Sistemas - Fatec SJC</p>
+              <p>
+                Olá, meu nome é Guilherme Rosa e estou cursando analise e
+                desenvolvimento de sistemas na Fatec. Atualmente tenho 18 anos e
+                estou no primeiro semestre da faculdade, tenho conhecimento do
+                basico de HTML, CSS, Python e Flask. Meu intuito é me aprofundar
+                nas tecnologias durante o curso e me especializar futuramente na
+                area de desenvolvimento de jogos.
+              </p>
+            </div>
+            <!-- site-top-txt -->
+            <div class="site-top-imgdiv">
+              <img src="/Static/foto_pessoal.jpg" alt="" class="site-top-img" />
+            </div>
+            <!-- site-top-img -->
+          </div>
+          <!-- flex -->
+        </div>
+        <!-- interface-->
       </section>
       <section>
-        <div>
-          <h2>Curriculo</h2>
-          <a href=""> Link do Curriculo</a>
-        </div>
-        <div>
-          <h2>Resumo do Curriculo</h2>
-          <h3>Formação Academica</h3>
-          <p>
-            Tecnólogo em Análise e Desenvolvimento de Sistemas – FATEC São José
-            dos Campos Previsão de conclusão: 2027 (cursando) 1° Semestre
-          </p>
-          <p>Ensino Médio – Colégio COC São José dos Campos Conclusão: 2024</p>
-          <h3>Conhecimentos e Objetivos</h3>
-          <p>
-            Tenho pratica com metodologias ageis como o Scrum onde atuei como
-            Dev Team, pratica com projetos em HTML, CSS e Python. Procuro uma
-            oportunidade que tenha como foco o desenvolvimento web e aprimorar
-            minhas habilidades em Python e Flask. Futuramente quero me
-            especializar na area de desenvolvimento de jogos.
-          </p>
-        </div>
-      </section>
-      <section>
-        <h2>Certificados</h2>
-        <div>
-          <h3>Curso Básico de Git – Cursa</h3>
-          <a href="">Link do certificado</a>
-          <img src="" alt="" />
-        </div>
-        <div>
-          <h3>IT Essentials 7 – Cisco Networking Academy</h3>
-          <a href="">Link do certificado</a>
-          <img src="" alt="" />
-        </div>
-      </section>
-      <section>
-        <h2>Projetos</h2>
-        <div>
-          <h3>SIRAAS - SISTEMA DE REGISTRO DE ATESTADOS E AVALIAÇÃO SCRUM</h3>
-          <img src="" alt="" />
-          <p>
-            O projeto SIRASS é um sistema web voltado para o gerenciamento de
-            atestados médicos e a avaliação de equipes Scrum, desenvolvido para
-            atender instituições de ensino e pequenas empresas. Minha principal
-            contribuição no projeto foi a criação da página de gerenciamento de
-            atestados, tanto para alunos quanto para docentes. Atuei
-            principalmente no backend, utilizando HTML, Python e o
-            microframework Flask para desenvolver a tabela de atestados e
-            implementar o sistema de filtro de pesquisa.
-          </p>
-          <a href="">Link do Github</a>
-        </div>
-      </section>
-      <section>
-        <h2>Habilidades</h2>
-        <div>
+        <div class="interface">
           <div>
-            <h3>Hard Skills</h3>
-            <p>Python | Flask</p>
-            <p>HTML | CSS</p>
-            <p>Git | GitHub</p>
-            <p>Metodologia Scrum</p>
-            <p>Inglês Intermediário</p>
+            <h2 class="title">Curriculo</h2>
+            <a
+              class="anchor"
+              target="_blank"
+              href="/Static/Currículo - Guilherme de Moraes Rosa.pdf"
+            >
+              Link do Curriculo</a
+            >
           </div>
           <div>
-            <h3>Soft Skills</h3>
-            <p>Trabalho em equipe</p>
-            <p>Proatividade</p>
-            <p>Organização</p>
-            <p>Pensamento Analítico</p>
+            <h2 class="title">Resumo do Curriculo</h2>
+            <h3 class="subtitle">Formação Academica</h3>
+            <p>
+              Tecnólogo em Análise e Desenvolvimento de Sistemas – FATEC São
+              José dos Campos Previsão de conclusão: 2027 (cursando) 1° Semestre
+            </p>
+            <p>
+              Ensino Médio – Colégio COC São José dos Campos Conclusão: 2024
+            </p>
+            <h3 class="subtitle">Conhecimentos e Objetivos</h3>
+            <p>
+              Tenho pratica com metodologias ageis como o Scrum onde atuei como
+              Dev Team, pratica com projetos em HTML, CSS e Python. Procuro uma
+              oportunidade que tenha como foco o desenvolvimento web e aprimorar
+              minhas habilidades em Python e Flask. Futuramente quero me
+              especializar na area de desenvolvimento de jogos.
+            </p>
           </div>
         </div>
+        <!-- interface -->
+      </section>
+      <section>
+        <div class="interface">
+          <h2 class="title">Certificados</h2>
+          <div>
+            <h3 class="subtitle">Curso Básico de Git – Cursa</h3>
+            <a
+              href="/Static/Certificado Do GIT.pdf"
+              target="_blank"
+              class="anchor"
+              >Link do certificado</a
+            >
+            <img src="/Static/Certificado Do GIT.png" alt="" />
+          </div>
+          <div>
+            <h3 class="subtitle">IT Essentials 7 – Cisco Networking Academy</h3>
+            <a href="" class="anchor">Link do certificado</a>
+            <img src="" alt="" />
+          </div>
+        </div>
+        <!-- interface -->
+      </section>
+      <section>
+        <div class="interface">
+          <h2 class="title">Projetos</h2>
+          <div>
+            <h3 class="subtitle">
+              SIRAAS - SISTEMA DE REGISTRO DE ATESTADOS E AVALIAÇÃO SCRUM
+            </h3>
+            <img src="/Static/logo_sirass.jpg" alt="" />
+            <p>
+              O projeto SIRASS é um sistema web voltado para o gerenciamento de
+              atestados médicos e a avaliação de equipes Scrum, desenvolvido
+              para atender instituições de ensino e pequenas empresas. Minha
+              principal contribuição no projeto foi a criação da página de
+              gerenciamento de atestados, tanto para alunos quanto para
+              docentes. Atuei principalmente no backend, utilizando HTML, Python
+              e o microframework Flask para desenvolver a tabela de atestados e
+              implementar o sistema de filtro de pesquisa.
+            </p>
+            <a
+              href="https://github.com/Gabrielle0905/SIRAAS"
+              target="_blank"
+              class="anchor"
+              >Link do Github</a
+            >
+          </div>
+        </div>
+        <!-- interface -->
+      </section>
+      <section>
+        <div class="interface">
+          <h2 class="title">Habilidades</h2>
+          <div>
+            <div>
+              <h3 class="subtitle">Hard Skills</h3>
+              <p>Python | Flask</p>
+              <p>HTML | CSS</p>
+              <p>Git | GitHub</p>
+              <p>Metodologia Scrum</p>
+              <p>Inglês Intermediário</p>
+            </div>
+            <div>
+              <h3 class="subtitle">Soft Skills</h3>
+              <p>Trabalho em equipe</p>
+              <p>Proatividade</p>
+              <p>Organização</p>
+              <p>Pensamento Analítico</p>
+            </div>
+          </div>
+        </div>
+        <!-- interface -->
       </section>
     </main>
     <footer>
       <section>
-        <h2>Contatos</h2>
-        <div>
-          <p>guilhermemoraesrosa7@gmail.com</p>
+        <div class="interface">
+          <h2 class="title">Contatos</h2>
+          <div>
+            <p>guilhermemoraesrosa7@gmail.com</p>
+          </div>
+          <div>
+            <a href="https://github.com/GuilhermeMRosa" target="_blank"
+              >Github</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/guilherme-rosa-b59527359/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </div>
+          <div>
+            <a href="https://www.instagram.com/guilherme.rozza/" target="_blank"
+              >Instagram
+            </a>
+          </div>
         </div>
-        <div>
-          <a href="https://github.com/GuilhermeMRosa" target="_blank">Github</a>
-        </div>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/guilherme-rosa-b59527359/"
-            target="_blank"
-            >Linkedin</a
-          >
-        </div>
-        <div>
-          <a href="">Instagram </a>
-        </div>
+        <!-- interface -->
       </section>
     </footer>
   </body>
