@@ -4,47 +4,82 @@
   margin: 0;
   padding: 0;
 }
+
 body {
-  background-color: 	#0d0d0d;
+  background-color: #0d0d0d;
+  padding: 1rem;
 }
+
+section {
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  margin: 4rem 0;
+}
+
 .title {
-  color: #c084fc;
+  color: #9201CB;
   font-size: 32px;
   font-weight: bold;
 }
+
 .subtitle {
-  color: #ff66c4;
+  color: #F715AB;
   font-size: 24px;
 }
+
 p {
   color: #f5f5f5;
   font-size: 20px;
   overflow-wrap: break-word;
 }
+
 .anchor {
   display: inline-block;
   background: transparent;
   border-radius: 2px;
   padding: 0.5rem;
-  color: #ff00ff;
+  color: #F715AB;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
+  width: fit-content;
 }
+
 .anchor:hover {
-  color: #339999;
-  box-shadow: 0px 3px 8px #339999;
+  color: #34EDF3;
+  box-shadow: 0px 3px 8px #34EDF3;
 }
+
 .interface {
   max-width: 1280px;
   margin: 0 auto;
   padding: 1rem;
 }
+
 .flex {
   display: flex;
 }
-/*  Area de navegação */
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*  Área de navegação */
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -54,7 +89,7 @@ header nav {
   gap: 4rem;
   border: 1.5rem solid #1a1a1a;
   background-color: #1a1a1a;
-  outline: 2px solid #c084fc;
+  outline: 2px solid #9201CB;
   box-shadow: 0px 4px 16px #ff00ff;
 }
 
@@ -62,26 +97,218 @@ header nav {
 .site-top {
   padding: 40px 4%;
 }
-.site-top-txt h1{
+
+.site-top-txt h1 {
   line-height: 40px;
 }
-.site-top-txt h2{
+
+.site-top-txt h2 {
   line-height: 50px;
 }
-.site-top-txt p{
+
+.site-top-txt p {
   line-height: 30px;
-  line-break: auto;
+  overflow-wrap: break-word;
+  padding: 0.5rem;
 }
+
 .site-top-img {
   width: 80%;
   height: auto;
   border-radius: 50%;
-  border: solid #66fcf1;
+  border: solid #34EDF3;
   box-shadow: 0 2px 16px #f5f5f5;
 }
 
-/* Footer da pagina */
+.site-top-imgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Body Curriculo */
+.curriculoTop {
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.curriculoBody {
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Body Certificados */
+.certificados {
+  display: flex;
+  align-items: center;
+}
+
+.certificado1 {
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.certificado1 img {
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  border: solid #34EDF3;
+  box-shadow: 0 2px 16px #f5f5f5;
+}
+
+.certificado2 {
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.certificado2 .anchor {
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Body Projetos */
+.projetosBody.flex {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.projetosSIRAAS {
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.projetosSIRAAS img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Body Habilidades */
+.habilidadesBody.flex {
+  padding: 3rem;
+}
+
+.habilidadesHardSkills {
+  padding: 3rem;
+  gap: 1rem;
+  width: 21.5rem;
+  max-height: 10rem;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+}
+
+.habilidadesSoftSkills {
+  padding: 3rem;
+  gap: 1rem;
+  width: 21.5rem;
+  max-height: 10rem;
+  margin-bottom: 5rem;
+}
+
+/* Footer da página */
+.gap-4 {
+  gap: 1rem; /* ou 16px */
+}
+
+.mt-4 {
+  margin-top: 1rem; /* ou 16px */
+}
+
 footer a,
 footer p {
-  color: #ff00ff;
+  color: #F715AB;
+}
+
+.social-button {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #1e1e2f;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.social-button:hover {
+  background-color: #34EDF3;
+  transform: scale(1.05);
+}
+
+footer img {
+  width: 100%;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+footer .interface {
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .site-top {
+    padding: 20px 2%;
+  }
+
+  .site-top-txt h1 {
+    font-size: 24px;
+  }
+
+  .site-top-txt h2 {
+    font-size: 20px;
+  }
+
+  .site-top-txt p {
+    font-size: 16px;
+  }
+
+  .certificado1 img {
+    width: 100%;
+  }
+
+  .habilidadesHardSkills,
+  .habilidadesSoftSkills {
+    width: 100%;
+    max-height: none;
+  }
+
+  .habilidadesBody.flex {
+    padding: 1rem;
+  }
+
+  .projetosSIRAAS img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .anchor {
+    font-size: 1.2rem;
+  }
+
+  .social-button img {
+    max-width: 40px;
+    max-height: 40px;
+  }
 }
