@@ -17,13 +17,13 @@ section {
 }
 
 .title {
-  color: #9201CB;
+  color: #9201cb;
   font-size: 32px;
   font-weight: bold;
 }
 
 .subtitle {
-  color: #F715AB;
+  color: #f715ab;
   font-size: 24px;
 }
 
@@ -38,7 +38,7 @@ p {
   background: transparent;
   border-radius: 2px;
   padding: 0.5rem;
-  color: #F715AB;
+  color: #f715ab;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -47,8 +47,8 @@ p {
 }
 
 .anchor:hover {
-  color: #34EDF3;
-  box-shadow: 0px 3px 8px #34EDF3;
+  color: #34edf3;
+  box-shadow: 0px 3px 8px #34edf3;
 }
 
 .interface {
@@ -89,7 +89,7 @@ header nav {
   gap: 4rem;
   border: 1.5rem solid #1a1a1a;
   background-color: #1a1a1a;
-  outline: 2px solid #9201CB;
+  outline: 2px solid #9201cb;
   box-shadow: 0px 4px 16px #ff00ff;
 }
 
@@ -116,7 +116,7 @@ header nav {
   width: 80%;
   height: auto;
   border-radius: 50%;
-  border: solid #34EDF3;
+  border: solid #34edf3;
   box-shadow: 0 2px 16px #f5f5f5;
 }
 
@@ -141,36 +141,22 @@ header nav {
 
 /* Body Certificados */
 .certificados {
-  display: flex;
-  align-items: center;
-}
-
-.certificado1 {
-  flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
-.certificado1 img {
-  width: 50%;
+.certificado {
+  gap: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.certificado img {
+  width: 75%;
   max-width: 600px;
   height: auto;
-  border: solid #34EDF3;
+  border: solid #34edf3;
   box-shadow: 0 2px 16px #f5f5f5;
-}
-
-.certificado2 {
-  gap: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin: 0 auto;
-}
-
-.certificado2 .anchor {
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0;
 }
 
 /* Body Projetos */
@@ -179,12 +165,12 @@ header nav {
   margin-bottom: 3rem;
 }
 
-.projetosSIRAAS {
+.projetos {
   gap: 1rem;
   padding: 1rem;
 }
 
-.projetosSIRAAS img {
+.projetos img {
   width: 100%;
   max-width: 1000px;
   height: auto;
@@ -224,7 +210,7 @@ header nav {
 
 footer a,
 footer p {
-  color: #F715AB;
+  color: #f715ab;
 }
 
 .social-button {
@@ -236,7 +222,7 @@ footer p {
 }
 
 .social-button:hover {
-  background-color: #34EDF3;
+  background-color: #34edf3;
   transform: scale(1.05);
 }
 
