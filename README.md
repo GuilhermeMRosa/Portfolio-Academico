@@ -1,9 +1,4 @@
 # Portfolio de Guilherme De Moraes Rosa
-
-<p align="center">
-  <img src="/Static/foto_pessoal.jpg" alt="Foto de Guilherme" width="200"/>
-</p>
-
 ## 👨‍💻 Sobre
 
 Este é o **portfolio pessoal de Guilherme De Moraes Rosa**, estudante de **Análise e Desenvolvimento de Sistemas** na FATEC São José dos Campos. O objetivo do portfolio é apresentar:
@@ -22,7 +17,7 @@ O portfolio é **responsivo** e foi desenvolvido utilizando **HTML e CSS puros**
 
 O portfolio está **hospedado na Vercel** e pode ser acessado através do seguinte link:
 
-[Portfolio de Guilherme](https://seu-portfolio.vercel.app) <!-- substitua pelo link real -->
+[Portfolio de Guilherme](portfolio-academico-six.vercel.app) 
 
 ---
 
@@ -32,8 +27,4 @@ O portfolio está **hospedado na Vercel** e pode ser acessado através do seguin
 - **CSS3**  
 - Design responsivo com **media queries**  
 - Estrutura de layout baseada em **Flexbox**
-
----
-
-## 📁 Estrutura do projeto
 
