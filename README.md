@@ -17,7 +17,7 @@ O portfolio é **responsivo** e foi desenvolvido utilizando **HTML e CSS puros**
 
 O portfolio está **hospedado na Vercel** e pode ser acessado através do seguinte link:
 
-[Portfolio de Guilherme](portfolio-academico-six.vercel.app) 
+[Portfolio de Guilherme](https://portfolio-academico-six.vercel.app) 
 
 ---
 
