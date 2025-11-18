@@ -17,13 +17,13 @@ section {
 }
 
 .title {
-  color: #9201cb;
+  color: #a55ad6; /* antes: #9201cb */
   font-size: 32px;
   font-weight: bold;
 }
 
 .subtitle {
-  color: #f715ab;
+  color: #f276c5; /* antes: #f715ab */
   font-size: 24px;
 }
 
@@ -38,7 +38,7 @@ p {
   background: transparent;
   border-radius: 2px;
   padding: 0.5rem;
-  color: #f715ab;
+  color: #f276c5; /* antes: #f715ab */
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -47,8 +47,8 @@ p {
 }
 
 .anchor:hover {
-  color: #34edf3;
-  box-shadow: 0px 3px 8px #34edf3;
+  color: #7feff3; /* antes: #34edf3 */
+  box-shadow: 0px 3px 8px #7feff3;
 }
 
 .interface {
@@ -79,7 +79,18 @@ p {
   align-items: flex-start;
 }
 
-/*  Área de navegação */
+img {
+  max-height: 450px;
+  object-fit: contain;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Área de navegação */
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -89,8 +100,8 @@ header nav {
   gap: 4rem;
   border: 1.5rem solid #1a1a1a;
   background-color: #1a1a1a;
-  outline: 2px solid #9201cb;
-  box-shadow: 0px 4px 16px #ff00ff;
+  outline: 2px solid #a55ad6; /* antes: #9201cb */
+  box-shadow: 0px 4px 16px #d966ff; /* antes: #ff00ff */
 }
 
 /* Home do site */
@@ -114,10 +125,11 @@ header nav {
 
 .site-top-img {
   width: 80%;
+  max-height: 900px;
   height: auto;
   border-radius: 50%;
-  border: solid #34edf3;
-  box-shadow: 0 2px 16px #f5f5f5;
+  border: solid #7feff3; /* antes: #34edf3 */
+  box-shadow: 0 2px 16px #ccc; /* suavizado do branco */
 }
 
 .site-top-imgdiv {
@@ -126,7 +138,7 @@ header nav {
   align-items: center;
 }
 
-/* Body Curriculo */
+/* Currículo */
 .curriculoTop {
   gap: 1rem;
   margin-top: 1.5rem;
@@ -139,7 +151,7 @@ header nav {
   margin-bottom: 1.5rem;
 }
 
-/* Body Certificados */
+/* Certificados */
 .certificados {
   gap: 1rem;
   padding: 1rem;
@@ -155,11 +167,11 @@ header nav {
   width: 75%;
   max-width: 600px;
   height: auto;
-  border: solid #34edf3;
-  box-shadow: 0 2px 16px #f5f5f5;
+  border: solid #7feff3; /* antes: #34edf3 */
+  box-shadow: 0 2px 16px #ccc;
 }
 
-/* Body Projetos */
+/* Projetos */
 .projetosBody.flex {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -177,7 +189,7 @@ header nav {
   margin: 0 auto;
 }
 
-/* Body Habilidades */
+/* Habilidades */
 .habilidadesBody.flex {
   padding: 3rem;
 }
@@ -199,18 +211,10 @@ header nav {
   margin-bottom: 5rem;
 }
 
-/* Footer da página */
-.gap-4 {
-  gap: 1rem; /* ou 16px */
-}
-
-.mt-4 {
-  margin-top: 1rem; /* ou 16px */
-}
-
+/* Footer */
 footer a,
 footer p {
-  color: #f715ab;
+  color: #f276c5; /* antes: #f715ab */
 }
 
 .social-button {
@@ -222,7 +226,7 @@ footer p {
 }
 
 .social-button:hover {
-  background-color: #34edf3;
+  background-color: #7feff3; /* antes: #34edf3 */
   transform: scale(1.05);
 }
 
@@ -237,7 +241,7 @@ footer .interface {
   gap: 2rem;
 }
 
-/* Media Queries para Responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
   header nav {
     flex-direction: column;
@@ -261,10 +265,6 @@ footer .interface {
     font-size: 16px;
   }
 
-  .certificado1 img {
-    width: 100%;
-  }
-
   .habilidadesHardSkills,
   .habilidadesSoftSkills {
     width: 100%;
@@ -273,10 +273,6 @@ footer .interface {
 
   .habilidadesBody.flex {
     padding: 1rem;
-  }
-
-  .projetosSIRAAS img {
-    width: 100%;
   }
 }
 
