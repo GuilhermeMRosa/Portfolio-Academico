@@ -234,6 +234,10 @@ footer img {
 
 footer .interface {
   padding: 2rem;
+  gap: 1rem;
+}
+
+#social-media{
   gap: 2rem;
 }
 
