@@ -7,7 +7,6 @@
 
 body {
   background-color: #0d0d0d;
-  padding: 1rem;
 }
 
 section {
@@ -87,21 +86,18 @@ img {
 header {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 /* Área de navegação */
 header nav {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  gap: 4rem;
+  justify-content: center;
+  gap: 2rem;
   border: 1.5rem solid #1a1a1a;
   background-color: #1a1a1a;
-  outline: 2px solid #a55ad6; /* antes: #9201cb */
-  box-shadow: 0px 4px 16px #d966ff; /* antes: #ff00ff */
+  outline: 2px solid #a55ad6; 
+  box-shadow: 0px 4px 16px #d966ff;
 }
 
 /* Home do site */
