@@ -1,280 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Portfolio</title>
+    <title>Portfólio</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="#containerHome" class="anchor">Home</a>
-        <a href="#containerCurriculo" class="anchor">Curriculo</a>
-        <a href="#containerSkills" class="anchor">Skills</a>
-        <a href="#containerProjetos" class="anchor">Projetos</a>
-        <a href="#containerContato" class="anchor">Contato</a>
+        <ul>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Curriculo</a></li>
+          <li><a href="">Projetos</a></li>
+          <li><a href="">Certificados</a></li>
+          <li><a href="">Contatos</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-      <section class="site-top" id="containerHome">
-        <div class="interface">
-          <div class="flex">
-            <div class="site-top-txt">
-              <h1 class="title">Guilherme De Moraes Rosa</h1>
-              <h2 class="subtitle">Seja bem vindo!</h2>
-              <p>Cursando Analise e desenvolvimento de Sistemas - Fatec SJC</p>
-              <p>
-                Olá! Meu nome é Guilherme Rosa e sou estudante de Análise e
-                Desenvolvimento de Sistemas na Fatec São José dos Campos.
-                Atualmente estou no segundo semestre e possuo conhecimentos em
-                HTML, CSS, Python,Flask, Java e Git. Busco aprimorar minhas habilidades em
-                desenvolvimento e expandir minha experiência prática por
-                meio de projetos reais. No futuro, meu objetivo é me
-                especializar na área de desenvolvimento de jogos.
-              </p>
-            </div>
-            <!-- site-top-txt -->
-            <div class="site-top-imgdiv">
-              <img src="/Static/foto_pessoal.jpg" alt="" class="site-top-img" />
-            </div>
-            <!-- site-top-img -->
-          </div>
-          <!-- flex -->
-        </div>
-        <!-- interface-->
-      </section>
-      <section id="containerCurriculo">
-        <div class="interface">
-          <div class="curriculoTop flex flex-col flex-center">
-            <h2 class="title">Curriculo</h2>
-            <a
-              class="anchor"
-              target="_blank"
-              href="/Static/CV___Guilherme_Rosa.pdf"
-            >
-              Link do Curriculo</a
-            >
-          </div>
-          <div class="curriculoBody flex flex-col flex-center">
-            <h2 class="title">Resumo do Curriculo</h2>
-            <h3 class="subtitle">Formação Academica</h3>
-            <p>
-              Tecnólogo em Análise e Desenvolvimento de Sistemas – FATEC São
-              José dos Campos Previsão de conclusão: 2027 (cursando) 1° Semestre
-            </p>
-            <p>
-              Ensino Médio – Colégio COC São José dos Campos Conclusão: 2024
-            </p>
-            <h3 class="subtitle">Conhecimentos e Objetivos</h3>
-            <p>
-              Tenho pratica com metodologias ageis como o Scrum onde atuei como
-              Dev Team, pratica com projetos em HTML, CSS e Python. Procuro uma
-              oportunidade que tenha como foco o desenvolvimento web e aprimorar
-              minhas habilidades em Python e Flask. Futuramente quero me
-              especializar na area de desenvolvimento de jogos.
-            </p>
+      <!-- Sobre mim -->
+      <section id="sobre"></section>
+      <!-- Fim de Sobre mim -->
+      <!-- Curriculo -->
+      <section id="curriculo"></section>
+      <!-- Fim de Curriculo -->
+      <!-- Projetos -->
+      <section>
+        <div>
+          <h2>Projetos</h2>
+          <div class="projetos-container">
+            <!-- Cards -->
+            <section id="cards"></section>
+            <!-- Fim dos Cards -->
           </div>
         </div>
-        <!-- interface -->
       </section>
-      <section id="containerCertificados">
-        <div class="interface">
-          <div class="certificados flex flex-center">
-            <h2 class="title">Certificados</h2>
-          </div>
-          <div class="flex flex-col">
-            <!--- flex start -->
-            <div class="certificado flex flex-col flex-center">
-              <h3 class="subtitle">Curso Básico de Git – Cursa</h3>
-              <img src="/Static/Certificado Do GIT.png" alt="" />
-              <a
-                href="/Static/Certificado Do GIT.pdf"
-                target="_blank"
-                class="anchor"
-                >Link do certificado</a
-              >
-            </div>
-            <div class="certificado flex flex-col flex-center">
-              <h3 class="subtitle">
-                Curso MODELAGEM DE DADOS - Fundação Bradesco
-              </h3>
-
-              <img
-                src="/Static/Modelagem de Dados - Fundação Bradesco.jpg"
-                alt=""
-              />
-              <a
-                href="/Static/Modelagem de Dados - Fundação Bradesco.pdf"
-                target="_blank"
-                class="anchor"
-                >Link do certificado</a
-              >
-            </div>
-            <div class="certificado flex flex-col flex-center">
-              <h3 class="subtitle">
-                Trabalho como voluntario DevFest 2025
-              </h3>
-
-              <img
-                src="/Static/DevFest SJC 2025 PNG.png"
-                alt=""
-              />
-              <a
-                href="/Static/DevFest SJC 2025.pdf"
-                target="_blank"
-                class="anchor"
-                >Link do certificado</a
-              >
-            </div>
-            <div class="certificado flex flex-col flex-center">
-              <h3 class="subtitle">
-                Trabalho como voluntario CDIO Latin America Meeting
-              </h3>
-
-              <img
-                src="/Static/CDIO Latin America Meeting 2025.jpg"
-                alt=""
-              />
-              <a
-                href="/Static/CDIO Latin America Meeting 2025.pdf"
-                target="_blank"
-                class="anchor"
-                >Link do certificado</a
-              >
-            </div>
-          </div>
-          <!--- flex end -->
-        </div>
-        <!-- interface -->
-      </section>
-      <section
-        class="projetosBody flex flex-col flex-center"
-        id="containerProjetos"
-      >
-        <div class="interface">
-          <div class="flex flex-col flex-center">
-            <h2 class="title">Projetos</h2>
-            <div class="projetos flex flex-col flex-center">
-              <h3 class="subtitle">
-                SIRAAS - SISTEMA DE REGISTRO DE ATESTADOS E AVALIAÇÃO SCRUM
-              </h3>
-              <img src="/Static/logo_sirass.jpg" alt="" />
-              <p>
-                O projeto SIRASS é um sistema web voltado para o gerenciamento
-                de atestados médicos e a avaliação de equipes Scrum,
-                desenvolvido para atender instituições de ensino e pequenas
-                empresas. Minha principal contribuição no projeto foi a criação
-                da página de gerenciamento de atestados, tanto para alunos
-                quanto para docentes. Atuei principalmente no backend,
-                utilizando HTML, Python e o microframework Flask para
-                desenvolver a tabela de atestados e implementar o sistema de
-                filtro de pesquisa.
-              </p>
-              <a
-                href="https://github.com/Gabrielle0905/SIRAAS"
-                target="_blank"
-                class="anchor"
-                >Link do Github</a
-              >
-            </div>
-            <div class="projetos flex flex-col flex-center">
-              <h3 class="subtitle">Sphera</h3>
-              <img src="/Static/Sphera Logo.png" alt="" />
-              <p>
-                Projeto acadêmico desenvolvido em equipe na FATEC São José dos
-                Campos, utilizando Java e princípios do Scrum. A aplicação tem
-                como objetivo apoiar empresas na gestão, acompanhamento e
-                análise de PDIs, fornecendo relatórios e indicadores para
-                gestores e equipes de RH. Atuei na integração do banco de dados
-                com o sistema em Java, além de contribuir na implementação de
-                funcionalidades-chave e revisão do código em equipe.
-              </p>
-              <a
-                href="https://github.com/Minerva2025/Minerva"
-                target="_blank  "
-                class="anchor"
-                >Link do Github</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- interface -->
-      </section>
-      <section class="habilidadesBody" id="containerSkills">
-        <div class="interface">
-          <div class="flex flex-col flex-center">
-            <h2 class="title">Habilidades</h2>
-            <div class="flex flex-row flex-center">
-              <div class="habilidadesHardSkills flex flex-col">
-                <h3 class="subtitle">Hard Skills</h3>
-                <p>Python | Flask</p>
-                <p>HTML | CSS</p>
-                <p>Git | GitHub</p>
-                <p>Metodologia Scrum</p>
-                <p>Inglês Intermediário</p>
-              </div>
-              <div class="habilidadesSoftSkills flex flex-col flex-start">
-                <h3 class="subtitle">Soft Skills</h3>
-                <p>Trabalho em equipe</p>
-                <p>Proatividade</p>
-                <p>Organização</p>
-                <p>Pensamento Analítico</p>
-                <p>Foco em resolução de problemas</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- interface -->
-      </section>
+      <!-- Fim de Projetos -->
     </main>
-    <footer>
-      <section class="flex flex-col flex-center" id="containerContato">
-        <div class="interface flex flex-col flex-center">
-          <h2 class="title">Contatos</h2>
-
-          <div class="flex flex-col flex-center">
-            <p>guilhermedemoraesrosa@gmail.com</p>
-          </div>
-
-          <div class="flex flex-row flex-center gap-4 mt-4" id="social-media">
-            <!-- Github -->
-            <a
-              href="https://github.com/GuilhermeMRosa"
-              target="_blank"
-              class="social-button"
-            >
-              <img src="/Static/github.png" alt="Github" class="w-10 h-10" />
-            </a>
-
-            <!-- Linkedin -->
-            <a
-              href="https://www.linkedin.com/in/guilherme-rosa-b59527359/"
-              target="_blank"
-              class="social-button"
-            >
-              <img
-                src="/Static/linkedin.png"
-                alt="Linkedin"
-                class="w-10 h-10"
-              />
-            </a>
-
-            <!-- Instagram -->
-            <a
-              href="https://www.instagram.com/guilherme.rozza/"
-              target="_blank"
-              class="social-button"
-            >
-              <img
-                src="/Static/instagram.png"
-                alt="Instagram"
-                class="w-10 h-10"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-    </footer>
+    <!-- Scripts -->
+    <script src="js/about.js"></script>
+    <script src="js/curriculum.js"></script>
+    <script src="js/cards.js"></script>
   </body>
 </html>
