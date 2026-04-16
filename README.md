@@ -1,30 +1,73 @@
-# Portfolio de Guilherme De Moraes Rosa
-## 👨‍💻 Sobre
+# React + TypeScript + Vite
 
-Este é o **portfolio pessoal de Guilherme De Moraes Rosa**, estudante de **Análise e Desenvolvimento de Sistemas** na FATEC São José dos Campos. O objetivo do portfolio é apresentar:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- Currículo e formação acadêmica;
-- Certificados obtidos;
-- Projetos desenvolvidos;
-- Habilidades técnicas (Hard Skills) e comportamentais (Soft Skills);
-- Contatos e links para redes sociais.
+Currently, two official plugins are available:
 
-O portfolio é **responsivo** e foi desenvolvido utilizando **HTML e CSS puros**, com foco em uma estética escura e contrastes em azul e rosa, estilo neon sutil.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
----
+## React Compiler
 
-## 🔗 Link do Portfolio
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-O portfolio está **hospedado na Vercel** e pode ser acessado através do seguinte link:
+## Expanding the ESLint configuration
 
-[Portfolio de Guilherme](https://portfolio-academico-six.vercel.app) 
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
----
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-## 🛠 Tecnologias utilizadas
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-- **HTML5**  
-- **CSS3**  
-- Design responsivo com **media queries**  
-- Estrutura de layout baseada em **Flexbox**
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
