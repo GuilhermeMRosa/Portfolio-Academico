@@ -1,0 +1,8 @@
+# brainstorm para a reestruturacao do meu portfolio
+
+- utilizar vite + react
+- construir o visual primeiramente no figma (aprender a usar o básico do figma)
+- modo primariamente escuro, com cores como verde, azul petroleo, branco, prata. outras cores que poderia tentar encaixar na paleta é o roxo.
+- utilizar de alguma forma a figura da lua em partes do site
+- gostaria de utilizar o loki, ordem paranormal, dark souls, omori e outras obras que gosto como inspiração
+- tentar passar minha imagem da forma que consigo, não precisa ser algo espetacular. precisa transmitir quem eu sou, do meu jeito e mostrar confiança no meu trabalho, sendo algo original de alguma forma.

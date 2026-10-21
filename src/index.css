@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-hand: "Caveat", cursive;
+
+  --color-bg: #0b0e14;
+  --color-bg-alt: #11151d;
+  --color-bg-header: #0e1119;
+  --color-text: #f5f5f7;
+  --color-text-muted: #a3a9b7;
+  --color-border: rgba(124, 58, 237, 0.22);
+
+  --color-violet: #7c3aed;
+  --color-teal: #0e7490;
+  --color-pop: #facc15;
+  --color-pop-ink: #0b0e14;
+}
+
+:root[data-theme="light"] {
+  --color-bg: #ede9e2;
+  --color-bg-alt: #f3f0ea;
+  --color-bg-header: #f3f0ea;
+  --color-text: #12141c;
+  --color-text-muted: #565a6b;
+  --color-border: rgba(124, 58, 237, 0.25);
+  --color-teal: #0b6478;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.gradient-text {
+  background-image: linear-gradient(90deg, var(--color-violet), var(--color-teal));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  border-image: linear-gradient(135deg, var(--color-violet), var(--color-teal)) 1;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Céu com lua/sol — reage ao data-theme sem precisar de JS */
+.sky-star {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.sky-moon {
+  fill-opacity: 1;
+  transition: fill-opacity 0.4s ease;
+}
+
+.sky-sun {
+  fill-opacity: 0;
+  transition: fill-opacity 0.4s ease;
+}
+
+.sky-sun-ray {
+  opacity: 0.25;
+  transition: opacity 0.4s ease;
+}
+
+.sky-cloud {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+:root[data-theme="light"] .sky-star {
+  opacity: 0;
+}
+
+:root[data-theme="light"] .sky-moon {
+  fill-opacity: 0;
+}
+
+:root[data-theme="light"] .sky-sun {
+  fill-opacity: 1;
+}
+
+:root[data-theme="light"] .sky-sun-ray {
+  opacity: 0.9;
+}
+
+:root[data-theme="light"] .sky-cloud {
+  opacity: 0.55;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}

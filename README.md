@@ -9,7 +9,7 @@ Este é o **portfolio pessoal de Guilherme De Moraes Rosa**, estudante de **Aná
 - Habilidades técnicas (Hard Skills) e comportamentais (Soft Skills);
 - Contatos e links para redes sociais.
 
-O portfolio é **responsivo** e foi desenvolvido utilizando **HTML e CSS puros**, com foco em uma estética escura e contrastes em azul e rosa, estilo neon sutil.
+O portfolio é **responsivo** e foi desenvolvido em **React + Vite**, com foco em uma estética escura e um gradiente roxo → ciano-petróleo como identidade visual.
 
 ---
 
@@ -23,8 +23,8 @@ O portfolio está **hospedado na Vercel** e pode ser acessado através do seguin
 
 ## 🛠 Tecnologias utilizadas
 
-- **HTML5**  
-- **CSS3**  
-- Design responsivo com **media queries**  
-- Estrutura de layout baseada em **Flexbox**
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **lucide-react** (ícones)
 
